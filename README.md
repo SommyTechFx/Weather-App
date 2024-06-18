@@ -12,7 +12,7 @@ This Application offering real-time weather forecasts, alerts, and comprehensive
 
 # Resources
 
-GeoDB Cities API: https://rapidapi.com/hub
+GeoDB Cities API: https://rapidapi.com/hub <br>
 OpenWeather API: https://openweathermap.org/
 
 # Technology
