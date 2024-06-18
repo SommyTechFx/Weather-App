@@ -10,7 +10,7 @@ This Application offering real-time weather forecasts, alerts, and comprehensive
 - Interactive Maps
 - User-Friendly Interface
 
-# Resources
+# Resources (API)
 
 GeoDB Cities API: https://rapidapi.com/hub <br>
 OpenWeather API: https://openweathermap.org/
