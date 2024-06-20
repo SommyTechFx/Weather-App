@@ -1,6 +1,13 @@
 .title {
   font-size: 23px;
   font-weight: 700;
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+  .daily-container {
+    margin-top: 20px;
+  }
 }
 
 .daily-item {
