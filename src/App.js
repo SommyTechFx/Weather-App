@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import Search from "./components/search/search";
 import CurrentWeather from "./components/current-weather/current-weather";
-import { WEATHER_API_URL, WEATHER_API_KEY } from "../src/source/api";
+import { WEATHER_API_URL, api_key } from "../src/source/api";
 import { useState } from "react";
 
 function App() {
@@ -13,10 +13,11 @@ function App() {
     const [lat, lon] = searchData.value.split("");
 
     const currentWeatherFetch = fetch(
-      `${WEATHER_API_URL}weather?lat=${lat}&lon=${lon}&appid= ${WEATHER_API_KEY}`
+      `${WEATHER_API_URL}weather?lat=${lat}&lon=${lon}&appid=${api_key}`
     );
+
     const forecastFetch = fetch(
-      `${WEATHER_API_URL}forecast?lat=${lat}&lon=${lon}&appid= ${WEATHER_API_KEY}`
+      `${WEATHER_API_URL}forecast?lat=${lat}&lon=${lon}&appid=${api_key}`
     );
 
     Promise.all([currentWeatherFetch, forecastFetch])
@@ -27,7 +28,7 @@ function App() {
         setCurrentweather({ city: searchData.label, ...weatherResponse });
         setForecast({ city: searchData.label, ...forecastResponse });
       })
-      .catch((err) => console.log(err));
+      .catch((err0r) => console.log(err0r));
   };
 
   console.log(currentWeather);
